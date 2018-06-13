@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    User.create(name: params[:name], email: params[:email], password: params[:password])
   end
 
   get '/logout' do
