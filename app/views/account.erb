@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
+    <% if User.is_logged_in? = true %>
     <h1> Welcome <%= User.current_user %></h1>
+    <% else %>
+    <h1> Welcome! </h1>
+    <% end <%>
 
   </body>
 </html>
