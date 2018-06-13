@@ -7,13 +7,11 @@
   </head>
   <body id="page-top">
     <h1>Welcome to FlatBank</h1>
-    <h3>Log In Please</h3><br>
-    <form method="POST" action="/login">
-      <label>Username:</label><br>
-      <input type="text" id="username"><br>
-      <label>Password:</label><br>
-      <input type="text" id="password"><br>
-      <button type="submit" value="submit"><br>
-      </form>
+    <h3>Log In Please</h3>
+    <form method="post" action="/login">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="password">
+      <input type="submit">
+    </form>
   </body>
 </html>
